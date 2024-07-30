@@ -26,8 +26,8 @@ def create_payment_link():
             amount=20000,
             description="Thanh toan don hang",
             items=[item],
-            cancelUrl="http://127.0.0.1:5500/public/cancel.html",
-            returnUrl="http://127.0.0.1:5500/public/success.html",
+            cancelUrl="https://easy-design.vercel.app/cancel.html",
+            returnUrl="https://easy-design.vercel.app/success.html",
         )
         payment_link_response = payos.createPaymentLink(payment_data)
     except Exception as e:
